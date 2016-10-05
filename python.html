@@ -5,7 +5,8 @@
 <head>
 
 	<meta charset="UTF-8">
-	<title>Div Tag Template</title>
+	<title>Python Page</title>
+	<link href="main.css" rel="stylesheet" type+"text/css">
 	<style>
 		body {
 			background: #ccd8ff;
@@ -35,7 +36,7 @@
 			position: relative;
 		}
 		
-		#mainHeader {
+		header#mainHeader {
 			height: 185px;
 			background: url(images/logo.png) no-repeat 25px center;
 			padding: 0 75px 0 300px;
@@ -44,20 +45,20 @@
 			margin-bottom: 16px;
 		}
 		
-		#mainHeader div {
+		header#mainHeader div {
 			margin-top: 16px;
 		}
 		
-		#mainHeader ul {
+		header#mainHeader ul {
 			list-style: none;
 			float: left;
 		}
 		
-		#mainHeader ul li {
+		header#mainHeader ul li {
 			float: left;
 		}
 		
-		#mainHeader ul li a {
+		header#mainHeader ul li a {
 			font-family: Arial, Helvatica, sans-serif;
 			font-size: 20px;
 			color: #ffffff;
@@ -66,12 +67,46 @@
 			text-decoration: none;
 		}
 		
-		#mainHeader ul li a.last {
+		header#mainHeader ul li a.last {
 			border: none;
 		}
 		
-		#mainHeader ul li a: hover {
+		header#mainHeader ul li a: hover {
 			color: #ccffff
+		}
+		
+		section#content {
+			float: left;
+			width: 600px;
+			padding: 0 10px 0 25px;
+			margin-bottom: 10px;
+			border-right: 1px solid #7f7f7f;
+		}
+		
+		section#content p {
+			color: #666;
+			line-height: 1.6;
+			margin-bottom: 10px;
+		}
+		
+		aside#hobbies {
+			font-size: 90%;
+			float: right;
+			width: 450pxl;
+			margin-bottom: 20px;
+		}
+		
+		footer#pageFooter {
+			clear: both;
+			border-top: 2px solid #7f7f7f;
+			padding: 20px;
+		}
+		
+		footer#pageFooter p {
+			text-align: center;
+			font-style: italic;
+			margin-bottom: 10px;
+			color: #666;
 		}
 	</style>
 
@@ -83,7 +118,7 @@
 <div id="wrapper">
 
 	<!-- page header - logo, title, links -->
-	<div id="mainHeader">
+	<header id="mainHeader">
 		<h1>Exploring Computer Science</h1>
 		<h2>My Collection of Programming Projects and Assignments</h2>
 		
@@ -91,43 +126,44 @@
 		<div id="mainNav">
 			<ul id="pages">
 				<li>
-					<a href="#">Scratch</a>
+					<a href="scratch.html">Scratch</a>
 				</li>
 				
 				<li>
-					<a href="#">Python</a>
+					<a href="python.html">Python</a>
 				</li>
 				
 				<li>
-					<a href="#">Java</a>
+					<a href="java.html">Java</a>
 				</li>
 				
 				<li>
-					<a href="#">Final Project</a>
+					<a href="final.html">Final Project</a>
 				</li>
 				
 				<li>
-					<a href="#">Home</a>
+					<a href="index.html">Home</a>
 				</li>
 			</ul>
 		</div><!-- end Navigation Links -->
 		
-	</div><!-- end header -->
+	</header><!-- end header -->
 	
 	<!-- Section Content -->
-	<div id="content">
+	<section id="content">
+		<h2>Python Content</h2>
 		<p>Replace this text with project and assignment examples</p>
-	</div><!-- end Content -->
+	</section><!-- end Content -->
 	
 	<!-- Aside Content -->
-	<div id="hobbies">
+	<aside id="hobbies">
 		<p>Place things you like here; photos, links, videos, etc.</p>
-	</div><!-- end Hobbies -->
+	</aside><!-- end Hobbies -->
 	
 	<!-- Footer Content -->
-	<div id="pageFooter">
+	<footer id="pageFooter">
 		<p>author, contact info, copyright</p>
-	</div><!-- end end Footer -->
+	</footer><!-- end end Footer -->
 
 </div><!-- end wrapper -->
 
